@@ -13,6 +13,7 @@ class ResearcherWebsite {
         this.loadPublications();
         this.loadResearchExperience();
         this.loadAwards();
+        this.loadScholarStats();
         this.setupIntersectionObserver();
         this.setupViewAllButton();
         this.checkCVFile();
@@ -422,6 +423,28 @@ class ResearcherWebsite {
         } catch (error) {
             console.error('Error loading awards:', error);
             document.getElementById('awards-list').innerHTML = '<p class="error-message">Error loading awards. Please try again later.</p>';
+        }
+    }
+
+    async loadScholarStats() {
+        try {
+            const url = "https://raw.githubusercontent.com/debesheedas/scholar-stats/main/data.json";
+            const response = await fetch(url, { cache: "no-cache" });
+            
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Update the stats with fallback values
+            document.getElementById("citations").textContent = data.citations ?? data.citations_all ?? "90";
+            document.getElementById("hindex").textContent = data.h_index ?? "4";
+            document.getElementById("i10index").textContent = data.i10_index ?? "2";
+            
+        } catch (error) {
+            console.error("Failed to load scholar stats:", error);
+            // Keep the default "—" values if loading fails
         }
     }
 

@@ -1,5 +1,28 @@
 [
     {
+      "title": "CommandSans: Securing AI Agents with Surgical Precision Prompt Sanitization",
+      "authors": [
+        "Debeshee Das",
+        "Luca Beurer-Kellner",
+        "Marc Fischer",
+        "Maximilian Baader"
+      ],
+      "venue": "",
+      "year": 2025,
+      "location": "",
+      "pages": "",
+      "doi": "10.48550/arXiv.2510.08829",
+      "links": {
+        "paper": "https://arxiv.org/abs/2510.08829"
+      },
+      "thumbnail": "article",
+      "thumbnail_image": "images/commandsans.png",
+      "thumbnail_padding": 6,
+      "abstract": "The increasing adoption of LLM agents with access to numerous tools and sensitive data significantly widens the attack surface for indirect prompt injections. Due to the context-dependent nature of attacks, however, current defenses are often ill-calibrated as they cannot reliably differentiate malicious and benign instructions, leading to high false positive rates that prevent their real-world adoption. To address this, we present a novel approach inspired by the fundamental principle of computer security: data should not contain executable instructions. Instead of sample-level classification, we propose a token-level sanitization process, which surgically removes any instructions directed at AI systems from tool outputs, capturing malicious instructions as a byproduct. In contrast to existing safety classifiers, this approach is non-blocking, does not require calibration, and is agnostic to the context of tool outputs. Further, we can train such token-level predictors with readily available instruction-tuning data only, and don't have to rely on unrealistic prompt injection examples from challenges or of other synthetic origin. In our experiments, we find that this approach generalizes well across a wide range of attacks and benchmarks like AgentDojo, BIPIA, InjecAgent, ASB and SEP, achieving a 7-10x reduction of attack success rate (ASR) (34% to 3% on AgentDojo), without impairing agent utility in both benign and malicious settings.",
+      "keywords": ["prompt injection", "LLM agents", "security", "defense"],
+      "selected": false
+    },
+    {
       "title": "Blind Baselines Beat Membership Inference Attacks for Foundation Models",
       "authors": [
         "Debeshee Das",

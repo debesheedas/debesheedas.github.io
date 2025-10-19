@@ -335,14 +335,14 @@ body {
 
 .profile-info {
   text-align: center;
-  margin: var(--spacing-lg) 0;
+  margin: var(--spacing-xs) 0;
 }
 
 .profile-subtitle {
   font-size: 1.125rem;
   font-weight: 600;
   color: var(--color-primary);
-  margin: 0 0 var(--spacing-xs) 0;
+  margin: var(--spacing-xs) 0 var(--spacing-xs) 0;
 }
 
 .profile-education {
@@ -357,6 +357,7 @@ body {
   flex-direction: column;
   gap: var(--spacing-sm);
   align-items: center;
+  margin-top: var(--spacing-sm);
 }
 
 .contact-item {
@@ -382,6 +383,80 @@ body {
 
 .contact-item .material-icons-outlined {
   font-size: 1.1rem;
+}
+
+/* Scholar Stats Section */
+.scholar-stats {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-sm);
+  background-color: var(--color-surface-variant);
+  border-radius: var(--radius-lg);
+  min-width: 80px;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--color-outline-variant);
+}
+
+.stat-box:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.stat-number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0;
+  transition: color var(--transition-fast);
+}
+
+.stat-box:hover .stat-number {
+  color: var(--color-on-primary);
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-on-surface);
+  text-align: center;
+  transition: color var(--transition-fast);
+}
+
+.stat-box:hover .stat-label {
+  color: var(--color-on-primary);
+}
+
+/* Responsive design for scholar stats */
+@media (max-width: 768px) {
+  .scholar-stats {
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+  }
+  
+  .stat-box {
+    padding: var(--spacing-sm);
+    min-width: 70px;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
 }
 
 .research-areas-compact {

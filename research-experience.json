@@ -1,8 +1,21 @@
 [
   {
+    "company": "UC Berkeley - Wagner Research Group",
+    "position": "Master's Thesis",
+    "duration": "September 2025 - Present",
+    "logos": [
+      {
+        "image": "images/berkeley-logo.png",
+        "alt": "UC Berkeley"
+      }
+    ],
+    "description": "Exploring attacks and defenses in real-world AI agents with persistent memory, focusing on memory poisoning attacks, replay attacks, and data exfiltration.",
+    "links": []
+  },
+  {
     "company": "Snyk / Invariant Labs",
     "position": "AI Security Research Intern",
-    "duration": "July 2025 - Present",
+    "duration": "Summer 2025",
     "logos": [
       {
         "image": "images/snyk-logo.png",
@@ -13,7 +26,7 @@
         "alt": "Invariant Labs"
       }
     ],
-    "description": "Developed a novel instruction-tagger and sanitizer based defence for prompt injection attacks on LLM agents. Evaluations on the Agent Dojo benchmark show an almost perfect defense without loss in Utility.",
+    "description": "Developed a novel instruction-tagger and sanitizer based defence for indirectprompt injection attacks on LLM agents. Evaluations on the Agent Dojo benchmark show a 19x reduction in attack success rate without loss in utility.",
     "links": []
   },
   {
