@@ -3,7 +3,7 @@
 This repository contains the source code for my personal academic/professional website.
 ## 🌐 Website
 
-**Visit my website:** [https://debesheedas.github.io/debeshee/](https://debesheedas.github.io/)
+**Visit my website:** [https://debesheedas.github.io/](https://debesheedas.github.io/)
 
 ## About Me
 
