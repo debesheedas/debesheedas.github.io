@@ -15,7 +15,7 @@ I'm a second-year Master's student in Computer Science at ETH Zurich, majoring i
 - **Google Scholar:** [Publications & Citations](https://scholar.google.com/citations?hl=en&user=sSPq-ZEAAAAJ)
 - **LinkedIn:** [Professional Profile](https://www.linkedin.com/in/debeshee-das/?originalSubdomain=ch)
 - **GitHub:** [Research Code & Projects](https://github.com/debesheedas)
-- **Email:** debdas@student.ethz.ch
+- **Email:** debesheedas@gmail.com
 
 ## 🏆 Selected Highlights
 
@@ -23,10 +23,6 @@ I'm a second-year Master's student in Computer Science at ETH Zurich, majoring i
 - **IEEE WISC Premier Scholarship** (4 students selected internationally)
 - **COMEX Tool** creator with **140+ GitHub stars** for ML security research
 - Research experience at **Snyk/Invariant Labs**, **Microsoft Research**, **IBM Research Labs**
-
-## 🛠️ Technical Stack
-
-This website is built with **HTML5, CSS3, and JavaScript** using Material Design principles. It features responsive design, dark/light theme support, and dynamic content loading from JSON files. The site is deployed using **GitHub Pages** for fast, reliable hosting.
 
 ---
 
